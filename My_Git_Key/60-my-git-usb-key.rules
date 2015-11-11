@@ -1,0 +1,3 @@
+ACTION=="add" KERNEL=="sd[a-z]*",  RUN+="/usr/bin/my_udev.bash add %k"
+ACTION=="remove" KERNEL=="sd[a-z]*",  RUN+="/usr/bin/my_udev.bash remove %k"
+
